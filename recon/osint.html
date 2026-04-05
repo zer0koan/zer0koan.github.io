@@ -4,140 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Security Research</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Monaco', 'Courier New', monospace;
-            background-color: #f5f5dc;
-            color: #1a1a1a;
-            line-height: 1.6;
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        header {
-            border-bottom: 2px solid #1a1a1a;
-            padding-bottom: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        h1 {
-            font-size: 2rem;
-            font-weight: bold;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5rem;
-        }
-
-        .subtitle {
-            font-size: 0.9rem;
-            color: #2d5016;
-            font-style: italic;
-        }
-
-        section {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            font-size: 1.4rem;
-            font-weight: bold;
-            border-left: 3px solid #2d5016;
-            padding-left: 1rem;
-            margin-bottom: 1rem;
-            margin-top: 2rem;
-        }
-
-        h3 {
-            font-size: 1rem;
-            font-weight: bold;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            text-align: justify;
-        }
-
-        ul, ol {
-            margin-left: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        a {
-            color: #2d5016;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-
-        a:hover {
-            background-color: #2d5016;
-            color: #f5f5dc;
-            padding: 0 0.2rem;
-        }
-
-        .research-item {
-            background-color: #ffffff;
-            border: 1px solid #1a1a1a;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .research-item h3 {
-            margin-top: 0;
-        }
-
-        .tag {
-            display: inline-block;
-            background-color: #2d5016;
-            color: #f5f5dc;
-            padding: 0.25rem 0.5rem;
-            margin-right: 0.5rem;
-            margin-top: 0.5rem;
-            font-size: 0.85rem;
-            font-weight: bold;
-        }
-
-        footer {
-            border-top: 2px solid #1a1a1a;
-            padding-top: 1.5rem;
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            text-align: center;
-        }
-
-        .divider {
-            border: none;
-            border-top: 1px dashed #1a1a1a;
-            margin: 2rem 0;
-        }
-
-        code {
-            background-color: #ffffff;
-            border: 1px solid #1a1a1a;
-            padding: 0.2rem 0.4rem;
-            font-size: 0.9rem;
-        }
-
-        blockquote {
-            border-left: 3px solid #2d5016;
-            padding-left: 1rem;
-            margin-left: 0;
-            margin-bottom: 1rem;
-            font-style: italic;
-            color: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/zk_style.css">
 </head>
 <body>
     <header>
@@ -146,122 +13,28 @@
     </header>
 
     <section>
-        <h2>Overview</h2>
+        <h2>Open Source Intelligence</h2>
         <p>
-            This archive documents security research, vulnerability analysis, and technical findings. 
-            Content is organized by topic and includes references to relevant papers, tools, and resources.
-        </p>
+	Generalized approaches to finding things
+	</p>
     </section>
 
     <hr class="divider">
 
     <section>
-        <h2>Research Areas</h2>
+        <h2>SECTION 1</h2>
 
         <div class="research-item">
-            <h3>Reconnaissance</h3>
+            <h3>ITEM 1</h3>
             <p>
-                Discussions on new or potential avenues for discovering systems and technologies. 
+                SOMETHING PITHY
             </p>
-            <ul>
-                <li><a href="recon/mapping.html">Attack Surface Mapping</a></li>
-                <li><a href="recon/fingerprints.html">Technology Fingerprints</a></li>
-                <li><a href="recon/osint.html">Open Source Intelligence</a></li>
-            </ul>
-            <span class="tag">recon</span>
-            <span class="tag">discovery</span>
-            <span class="tag">osint</span>
         </div>
         
-        <div class="research-item">
-            <h3>Web Applications</h3>
-            <p>
-                Focused on web application assessments.
-            </p>
-            <ul>
-                <li><a href="webapp/technologies.html">Technologies</a></li>
-                <li><a href="webapp/tools.thml">Tools</a></li>
-                <li><a href="webapp/techniques.html">Techniques</a></li>
-            </ul>
-            <span class="tag">webapp</span>
-            <span class="tag">ttps</span>
-        </div>
-
-        <div class="research-item">
-            <h3>Network</h3>
-            <p>
-                Focused on network assessments.
-            </p>
-            <ul>
-                <li><a href="network/technologies.html">Technologies</a></li>
-                <li><a href="network/tools.thml">Tools</a></li>
-                <li><a href="network/techniques.html">Techniques</a></li>
-            </ul>
-            <span class="tag">network</span>
-            <span class="tag">ttps</span>
-        </div>
-
-        <div class="research-item">
-            <h3>Vulnerability Disclosure</h3>
-            <p>
-                Responsible disclosure practices and coordinated vulnerability management across software ecosystems.
-            </p>
-            <ul>
-                <li>CVE database analysis and trends</li>
-                <li>Zero-day ecosystem dynamics</li>
-                <li>Patch adoption metrics</li>
-            </ul>
-            <span class="tag">disclosure</span>
-            <span class="tag">vulnerability</span>
-        </div>
-
-    </section>
-
-    <hr class="divider">
-
-    <section>
-        <h2>References</h2>
-        
-        <h3 id="ref1">Key Publications</h3>
-        <ul>
-            <li><strong>NIST SP 800-53:</strong> Security and Privacy Controls for Federal Information Systems</li>
-            <li><strong>CWE Top 25:</strong> Most Dangerous Software Weaknesses</li>
-            <li><strong>OWASP Top 10:</strong> Web Application Security Risks</li>
-        </ul>
-
-        <h3>Tools & Resources</h3>
-        <ul>
-            <li><code>openssl</code> — Cryptography toolkit</li>
-            <li><code>wireshark</code> — Network protocol analyzer</li>
-            <li><code>ghidra</code> — Reverse engineering framework</li>
-            <li><code>burp suite</code> — Web application testing</li>
-        </ul>
-
-        <h3>Communities</h3>
-        <ul>
-            <li><a href="#">DEF CON</a> — Security conference</li>
-            <li><a href="#">Black Hat</a> — Security briefings</li>
-            <li><a href="#">PoC||GTFO</a> — Proof of Concept publication</li>
-        </ul>
-    </section>
-
-    <hr class="divider">
-
-    <section>
-        <h2>Methodology</h2>
-        <blockquote>
-            "In security research, rigor and transparency are non-negotiable. 
-            Findings must be reproducible, responsible disclosure must be followed, 
-            and the goal is always to improve the security posture of systems."
-        </blockquote>
-        <p>
-            This research adheres to responsible disclosure principles. All findings are 
-            coordinated with relevant stakeholders before public release.
-        </p>
     </section>
 
     <footer>
-        <p>Last updated: April 2026 | <a href="#">Contact</a> | <a href="#">Archive</a></p>
+	    <p>Last updated: April 2026 | <a href="zer0koan@gmail.com">Contact</a> | <a href="github.com/zer0koan">GitHub</a></p>
     </footer>
 </body>
 </html>
