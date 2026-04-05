@@ -1,0 +1,138 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Monaco', 'Courier New', monospace;
+        background-color: #f5f5dc;
+        color: #1a1a1a;
+        line-height: 1.6;
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    header {
+        border-bottom: 2px solid #1a1a1a;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        color: #2d5016;
+        font-style: italic;
+    }
+
+    section {
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        border-left: 3px solid #2d5016;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+
+    ul, ol {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        color: #2d5016;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    a:hover {
+        background-color: #2d5016;
+        color: #f5f5dc;
+        padding: 0 0.2rem;
+    }
+
+    .ratt {
+        text-indent: 50px;
+    }
+
+    .research-item {
+        background-color: #ffffff;
+        border: 1px solid #1a1a1a;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .research-item h3 {
+        margin-top: 0;
+    }
+
+    .tag {
+        display: inline-block;
+        background-color: #2d5016;
+        color: #f5f5dc;
+        padding: 0.25rem 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+    footer {
+        border-top: 2px solid #1a1a1a;
+        padding-top: 1.5rem;
+        margin-top: 3rem;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .divider {
+        border: none;
+        border-top: 1px dashed #1a1a1a;
+        margin: 2rem 0;
+    }
+
+    code {
+        background-color: #ffffff;
+        border: 1px solid #1a1a1a;
+        padding: 0.2rem 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    blockquote {
+        border-left: 3px solid #2d5016;
+        padding-left: 1rem;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        font-style: italic;
+        color: #555;
+    }
+</style>
