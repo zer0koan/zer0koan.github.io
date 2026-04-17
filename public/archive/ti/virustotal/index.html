@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://abridge.netlify.app/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://abridge.netlify.app/abridge.css?h=bc020f53ef5e95a9bf90" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://abridge.netlify.app" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://abridge.netlify.app/manifest.min.json" />
+  <link rel="mask-icon" href="https://abridge.netlify.app/safari-pinned-tab.svg" color="#ff9900" />
+  <link rel="icon" type="image/svg+xml" href="https://abridge.netlify.app/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://abridge.netlify.app/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://abridge.netlify.app/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://abridge.netlify.app/favicon-16x16.png" />
+  <link rel="alternate" type="application/atom+xml" title="Zerokoan Research Atom Feed" href="https://abridge.netlify.app/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Virus Total | Zerokoan Research</title>
+  <meta name="author" content="zk" />
+  <meta name="copyright" content="Zerokoan Research" />
+  <meta name="description" content="Notes on integrating VT data into TI pipeline" />
+  <link rel="canonical" href="https://abridge.netlify.app/archive/ti/virustotal/" />
+  <meta name="keywords" content="zerokoan research, zerokoan, zer0koan, zkr, zeeek, security research, red team, vulnerability research, threat intelligence, osint, reconnaissance, chaos casual" />
+  <meta property="og:url" content="https://abridge.netlify.app/archive/ti/virustotal/" />
+  <meta name="twitter:url" content="https://abridge.netlify.app/archive/ti/virustotal/" />
+  <meta property="og:description" content="Notes on integrating VT data into TI pipeline" />
+  <meta name="twitter:description" content="Notes on integrating VT data into TI pipeline" />
+  <meta property="og:title" content="Virus Total | Zerokoan Research" />
+  <meta name="twitter:title" content="Virus Total | Zerokoan Research" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:site_name" content="Zerokoan Research" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2026-04-16" />
+  <meta name="twitter:site" content="@zerokoan" />
+  <meta name="twitter:creator" content="@zerokoan" />
+  <script defer src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+  <script defer src="https://abridge.netlify.app/js/abridge.min.js?h=e0f9a881a665c86cce9c" integrity="sha384-QF67y7RnPkuDrJNQqn3/7nYxqxWkW/qHI7zN0WTES1aXbf+TotoByRBb835fUE6U"></script>
+  <noscript><link rel="stylesheet" href="https://abridge.netlify.app/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://abridge.netlify.app" title="Zerokoan Research"><font color="#f90">z</font>ero<font color="#f90">k</font>oan <font color="#f90">r</font>esearch</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://abridge.netlify.app/blog/"> Posts </a></li><li><a class="s110" href="https://abridge.netlify.app/categories/"> Categories </a></li><li><a class="s110" href="https://abridge.netlify.app/tags/"> Tags </a></li>
+            <li><div class="dropdown"><i class="svgs world" type="reset"></i>
+                <div class="dropdown-content">
+                <span>English</span><a href="https://abridge.netlify.app/es/archive/ti/virustotal/">Español</a><a href="https://abridge.netlify.app/pt/archive/ti/virustotal/">Português</a><a href="https://abridge.netlify.app/fr/archive/ti/virustotal/">Français</a></div>
+            </div></li><li><i type="reset" id="mode" class="js svgs adjust"></i></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="svgs svgm search"></button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <div class="desc">Security research, vulnerability analysis, technical findings, with an emphasis on Red Team operations</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://abridge.netlify.app/archive/ti/virustotal/">Virus Total</a></h1>
+
+      <span class="s95"> zk <span class="rpad"></span> April 16, 2026 <span class="rpad"></span> [<a href="https://abridge.netlify.app/categories/threat-intelligence/">Threat Intelligence</a>, <a href="https://abridge.netlify.app/categories/red-team/">Red Team</a>]</span>
+
+    
+
+
+<h2 id="virustotal">VirusTotal</h2>
+<p><a rel="noopener external" target="_blank" href="https://docs.virustotal.com/docs/api-overview">API documentation</a></p>
+<p>Official API v3 client libraries:</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://github.com/VirusTotal/vt-go">Go</a></li>
+<li><a rel="noopener external" target="_blank" href="https://github.com/VirusTotal/vt-py">Python</a></li>
+</ul>
+<p>Unofficial API v2 client libraries:</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://github.com/dutchcoders/go-virustotal">Go</a></li>
+</ul>
+<h3 id="public-api">Public API</h3>
+<p><strong>base url:</strong> <code>http://www.virustotal.com/vtapi/v2/</code></p>
+<p><strong>base url:</strong> <code>http://www.virustotal.com/api/v3/</code></p>
+<p>500 requests/day at 4 requests/minute</p>
+<p>Must not be used for commercial products and services, or business workflows which do not contribute new files</p>
+<h4 id="ips">IPs</h4>
+<pre class="giallo" style="color: #FFFFFF; background-color: #262335;"><code data-lang="plain"><span class="giallo-l"><span>https://www.virustotal.com/api/v3/ip_addresses/{ip}</span></span>
+<span class="giallo-l"><span>https://www.virustotal.com/api/v3/ip_addresses/{ip}/comments</span></span>
+<span class="giallo-l"><span>https://www.virustotal.com/api/v3/ip_addresses/{ip}/{relationship}</span></span></code></pre>
+<p>Example:</p>
+<pre class="giallo" style="color: #FFFFFF; background-color: #262335;"><code data-lang="plain"><span class="giallo-l"><span>curl --request GET \</span></span>
+<span class="giallo-l"><span>     --url https://www.virustotal.com/api/v3/ip_addresses/23.1.52.26 \</span></span>
+<span class="giallo-l"><span>     --header &#39;accept: application/json&#39; \</span></span>
+<span class="giallo-l"><span>     --header &#39;x-apikey: [api_key]&#39;</span></span></code></pre><h4 id="domains">Domains</h4>
+<pre class="giallo" style="color: #FFFFFF; background-color: #262335;"><code data-lang="plain"><span class="giallo-l"><span>https://www.virustotal.com/api/v3/domains/{domain}</span></span>
+<span class="giallo-l"><span>https://www.virustotal.com/api/v3/domains/{domain}/comments</span></span>
+<span class="giallo-l"><span>https://www.virustotal.com/api/v3/domains/{domain}/{relationship}</span></span>
+<span class="giallo-l"><span>https://www.virustotal.com/api/v3/domains/{domain}/relationships/{relationship}</span></span>
+<span class="giallo-l"><span>https://www.virustotal.com/api/v3/resolutions/{id}</span></span></code></pre><h3 id="premium-api">Premium API</h3>
+<h4 id="vt-hunting">VT Hunting</h4>
+<ul>
+<li>Uses YARA to search VT's dataset using three components:
+<ol>
+<li>Livehunt</li>
+<li>Retrohunt</li>
+<li>VTDIFF</li>
+</ol>
+</li>
+</ul>
+<h5 id="livehunt">Livehunt</h5>
+<p>Compares files submitted to VT with YARA rules in real time</p>
+<ul>
+<li>Stream of malware files classified by family</li>
+<li>Discover new malware</li>
+<li>Filter by given language, specific run-time packer</li>
+<li>Heuristic rules to detect suspicious files</li>
+<li>Track threat actors</li>
+</ul>
+<h5 id="retrohunt">Retrohunt</h5>
+<p>Compare historical files with YARA rules, which can take up to 4 hours</p>
+<h5 id="vtdiff">VTDIFF</h5>
+<p>Provide a collection of hashes to track and avoid, to create YARA rules with common binary subsequences</p>
+
+    </article>
+  </main>
+  <footer>
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://abridge.netlify.app/atom.xml" target="_blank" title="Zerokoan Research Atom Feed"><i type="Button" class="svg rss" title="Zerokoan Research Atom Feed"></i></a><a class="js m-protected" href="#emVyMGtvYW5AZ21haWwuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a><a href="https://twitter.com/zerokoan/" target="_blank" title="Twitter"><i type="Button" class="svg twitter" title="Twitter"></i></a><a href="https://www.linkedin.com/in/matthew-willburn/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/zer0koan/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a><a href="https://www.instagram.com/zerokoan/" target="_blank" title="Instagram"><i type="Button" class="svg instagram" title="Instagram"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://abridge.netlify.app/about/"> About </a>
+        <a class="rpad s90" href="https://abridge.netlify.app/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://abridge.netlify.app/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav>
+      <p class="s80"> &copy; <span id="year">2026</span> Zerokoan Research</p>
+    </div>
+  </footer>
+</body>
+</html>

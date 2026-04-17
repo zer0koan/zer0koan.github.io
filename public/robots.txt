@@ -1,0 +1,5 @@
+
+Sitemap: https://abridge.netlify.app/sitemap.xml
+User-Agent: *
+Allow: /
+Host: https://abridge.netlify.app
