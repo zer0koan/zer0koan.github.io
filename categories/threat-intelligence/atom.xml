@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Zerokoan Research - Threat Intelligence</title>
+    <subtitle>Security research, vulnerability analysis, technical findings, with an emphasis on Red Team operations</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://zerokoan.com/categories/threat-intelligence/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://zerokoan.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-04-16T00:00:00+00:00</updated>
+    <id>https://zerokoan.com/categories/threat-intelligence/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Virus Total</title>
+        <published>2026-04-16T00:00:00+00:00</published>
+        <updated>2026-04-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://zerokoan.com/archive/ti/virustotal/"/>
+        <id>https://zerokoan.com/archive/ti/virustotal/</id>
+        
+        <content type="html" xml:base="https://zerokoan.com/archive/ti/virustotal/">&lt;h2 id=&quot;virustotal&quot;&gt;VirusTotal&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.virustotal.com&#x2F;docs&#x2F;api-overview&quot;&gt;API documentation&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Official API v3 client libraries:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;VirusTotal&#x2F;vt-go&quot;&gt;Go&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;VirusTotal&#x2F;vt-py&quot;&gt;Python&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Unofficial API v2 client libraries:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dutchcoders&#x2F;go-virustotal&quot;&gt;Go&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;public-api&quot;&gt;Public API&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;base url:&lt;&#x2F;strong&gt; &lt;code&gt;http:&#x2F;&#x2F;www.virustotal.com&#x2F;vtapi&#x2F;v2&#x2F;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;base url:&lt;&#x2F;strong&gt; &lt;code&gt;http:&#x2F;&#x2F;www.virustotal.com&#x2F;api&#x2F;v3&#x2F;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;500 requests&#x2F;day at 4 requests&#x2F;minute&lt;&#x2F;p&gt;
+&lt;p&gt;Must not be used for commercial products and services, or business workflows which do not contribute new files&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;ips&quot;&gt;IPs&lt;&#x2F;h4&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #FFFFFF; background-color: #262335;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;https:&#x2F;&#x2F;www.virustotal.com&#x2F;api&#x2F;v3&#x2F;ip_addresses&#x2F;{ip}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;https:&#x2F;&#x2F;www.virustotal.com&#x2F;api&#x2F;v3&#x2F;ip_addresses&#x2F;{ip}&#x2F;comments&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;https:&#x2F;&#x2F;www.virustotal.com&#x2F;api&#x2F;v3&#x2F;ip_addresses&#x2F;{ip}&#x2F;{relationship}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Example:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #FFFFFF; background-color: #262335;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;curl --request GET \&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;     --url https:&#x2F;&#x2F;www.virustotal.com&#x2F;api&#x2F;v3&#x2F;ip_addresses&#x2F;23.1.52.26 \&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;     --header &amp;#39;accept: application&#x2F;json&amp;#39; \&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;     --header &amp;#39;x-apikey: [api_key]&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h4 id=&quot;domains&quot;&gt;Domains&lt;&#x2F;h4&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #FFFFFF; background-color: #262335;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;https:&#x2F;&#x2F;www.virustotal.com&#x2F;api&#x2F;v3&#x2F;domains&#x2F;{domain}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;https:&#x2F;&#x2F;www.virustotal.com&#x2F;api&#x2F;v3&#x2F;domains&#x2F;{domain}&#x2F;comments&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;https:&#x2F;&#x2F;www.virustotal.com&#x2F;api&#x2F;v3&#x2F;domains&#x2F;{domain}&#x2F;{relationship}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;https:&#x2F;&#x2F;www.virustotal.com&#x2F;api&#x2F;v3&#x2F;domains&#x2F;{domain}&#x2F;relationships&#x2F;{relationship}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;https:&#x2F;&#x2F;www.virustotal.com&#x2F;api&#x2F;v3&#x2F;resolutions&#x2F;{id}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;premium-api&quot;&gt;Premium API&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;vt-hunting&quot;&gt;VT Hunting&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Uses YARA to search VT&#x27;s dataset using three components:
+&lt;ol&gt;
+&lt;li&gt;Livehunt&lt;&#x2F;li&gt;
+&lt;li&gt;Retrohunt&lt;&#x2F;li&gt;
+&lt;li&gt;VTDIFF&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h5 id=&quot;livehunt&quot;&gt;Livehunt&lt;&#x2F;h5&gt;
+&lt;p&gt;Compares files submitted to VT with YARA rules in real time&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stream of malware files classified by family&lt;&#x2F;li&gt;
+&lt;li&gt;Discover new malware&lt;&#x2F;li&gt;
+&lt;li&gt;Filter by given language, specific run-time packer&lt;&#x2F;li&gt;
+&lt;li&gt;Heuristic rules to detect suspicious files&lt;&#x2F;li&gt;
+&lt;li&gt;Track threat actors&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h5 id=&quot;retrohunt&quot;&gt;Retrohunt&lt;&#x2F;h5&gt;
+&lt;p&gt;Compare historical files with YARA rules, which can take up to 4 hours&lt;&#x2F;p&gt;
+&lt;h5 id=&quot;vtdiff&quot;&gt;VTDIFF&lt;&#x2F;h5&gt;
+&lt;p&gt;Provide a collection of hashes to track and avoid, to create YARA rules with common binary subsequences&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Zerokoan Research - Web Assessment</title>
+    <subtitle>Security research, vulnerability analysis, technical findings, with an emphasis on Red Team operations</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://zerokoan.com/categories/web-assessment/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://zerokoan.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-04-29T00:00:00+00:00</updated>
+    <id>https://zerokoan.com/categories/web-assessment/atom.xml</id>
+    <entry xml:lang="en">
+        <title>PG: clone</title>
+        <published>2026-04-29T00:00:00+00:00</published>
+        <updated>2026-04-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://zerokoan.com/archive/pg/clone/"/>
+        <id>https://zerokoan.com/archive/pg/clone/</id>
+        
+        <content type="html" xml:base="https://zerokoan.com/archive/pg/clone/"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>PG: press</title>
+        <published>2026-04-29T00:00:00+00:00</published>
+        <updated>2026-04-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://zerokoan.com/archive/pg/press/"/>
+        <id>https://zerokoan.com/archive/pg/press/</id>
+        
+        <content type="html" xml:base="https://zerokoan.com/archive/pg/press/"></content>
+        
+    </entry>
+</feed>

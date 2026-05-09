@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Zerokoan Research - pg</title>
+    <subtitle>Security research, vulnerability analysis, technical findings, with an emphasis on Red Team operations</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://zerokoan.com/tags/pg/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://zerokoan.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-04-30T00:00:00+00:00</updated>
+    <id>https://zerokoan.com/tags/pg/atom.xml</id>
+    <entry xml:lang="en">
+        <title>That Overlook Shine</title>
+        <published>2026-04-30T00:00:00+00:00</published>
+        <updated>2026-04-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://zerokoan.com/blog/260430-that-overlook-shine/"/>
+        <id>https://zerokoan.com/blog/260430-that-overlook-shine/</id>
+        
+        <content type="html" xml:base="https://zerokoan.com/blog/260430-that-overlook-shine/">&lt;h2 id=&quot;why-get-paid-when-you-can-optimize-free-work-efficiency&quot;&gt;Why Get Paid When You Can Optimize Free Work Efficiency&lt;&#x2F;h2&gt;
+&lt;p&gt;Going to start working through HackTheBox and OffSec&#x27;s Proving Grounds boxes to refresh technical knowledge, but also to feel out changes to a couple workflows.&lt;&#x2F;p&gt;
+&lt;p&gt;Ultimately, I hope to have:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Obsidian vault with templates to ensure consistency and completeness of notetaking approach&lt;&#x2F;li&gt;
+&lt;li&gt;Notes from an assessment within dedicated folder at apex, with screenshots and other supporting evidence &lt;em&gt;somewhere&lt;&#x2F;em&gt; also in the apex&lt;&#x2F;li&gt;
+&lt;li&gt;From the notes, a rough skeleton with screenshots and code snippets (potentially using creation timestamps to associate screenshots with related notes and code)&lt;&#x2F;li&gt;
+&lt;li&gt;From the rough skeleton, an initial draft of the related writeup&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>
