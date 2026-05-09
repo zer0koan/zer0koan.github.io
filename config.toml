@@ -46,47 +46,6 @@ smart_punctuation = false          # `...` to `…`, `"quote"` to `“curly”` 
 theme = "synthwave-84"
 
 # Any Extra language you do not use, delete or comment out the extra language sections:
-[languages.fr]
-title = "zkr"
-description = "Recherche en sécurité, analyse de vulnérabilités et constats techniques, avec un accent sur les opérations Red Team."
-generate_feeds = true
-build_search_index = true
-search.include_title = true # include title of page/section in index
-search.include_description = true # include description of page/section in index
-search.include_content = true # include rendered content of page/section in index
-# search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
-taxonomies = [
-#    {name = "categories", feed = true},
-    {name = "tags", feed = true},
-]
-
-[languages.es]
-title = "zkr"
-description = "Investigación en seguridad, análisis de vulnerabilidades y hallazgos técnicos, con énfasis en operaciones de Red Team."
-generate_feeds = true
-build_search_index = true
-search.include_title = true # include title of page/section in index
-search.include_description = true # include description of page/section in index
-search.include_content = true # include rendered content of page/section in index
-# search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
-taxonomies = [
-#    {name = "categories", feed = true},
-    {name = "tags", feed = true},
-]
-
-[languages.pt]
-title = "zkr"
-description = "Pesquisa em segurança, análise de vulnerabilidades e descobertas técnicas, com ênfase em operações de Red Team."
-generate_feeds = true
-build_search_index = true
-search.include_title = true # include title of page/section in index
-search.include_description = true # include description of page/section in index
-search.include_content = true # include rendered content of page/section in index
-# search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
-taxonomies = [
-#    {name = "categories", feed = true},
-    {name = "tags", feed = true},
-]
 
 [extra]
 ###############################################################################
@@ -271,14 +230,14 @@ pwa_IGNORE_FILES = ["_headers","sw.min.js","sw.js"]
 ### Favicons, comment out a line to disable loading some or all of these if needed.
 ###############################################################################
 
-favicon_theme_color = "#333333"
-favicon_ms_color = "#333333"
-favicon_mask = "safari-pinned-tab.svg" # safari-pinned-tab.svg
-favicon_mask_color = "#ff9900"
-favicon_svg = "favicon.svg" # favicon.svg
-favicon180 = "apple-touch-icon.png" # apple-touch-icon.png
-favicon32 = "favicon-32x32.png" # favicon-32x32.png
-favicon16 = "favicon-16x16.png" # favicon-16x16.png
+#favicon_theme_color = "#333333"
+#favicon_ms_color = "#333333"
+#favicon_mask = "safari-pinned-tab.svg" # safari-pinned-tab.svg
+#favicon_mask_color = "#ff9900"
+#favicon_svg = "favicon.svg" # favicon.svg
+favicon180 = "icons8-empty-set-ios-17-filled-96.png" # apple-touch-icon.png
+favicon32 = "icons8-empty-set-ios-17-filled-32.png" # favicon-32x32.png
+favicon16 = "icons8-empty-set-ios-17-filled-16.png" # favicon-16x16.png
 
 
 ###############################################################################
